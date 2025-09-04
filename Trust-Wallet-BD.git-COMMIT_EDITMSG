@@ -1,0 +1,8 @@
+Allow admins to delete users and associated data from the panel
+
+Adds a new POST route `/admin/delete_user/:id` to handle user deletion. The route checks for admin session, finds the user by ID, and removes the user and their related payment, review, and message records from the database. The `user_information.ejs` view is updated to include a delete button with a confirmation prompt for each user.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 447aa8fd-9d11-4726-b36f-c918beaefc72
+Replit-Commit-Checkpoint-Type: full_checkpoint
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/042836ff-cdc9-4c7f-a4d8-6af44e7ab41e/447aa8fd-9d11-4726-b36f-c918beaefc72/hGz90cK

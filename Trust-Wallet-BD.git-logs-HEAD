@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 4faf1680f9a805f4baa295a3f758c7412b59c6f8 hkajol725 <47182720-hkajol725@users.noreply.replit.com> 1756888023 +0000	commit (initial): Initial commit
+4faf1680f9a805f4baa295a3f758c7412b59c6f8 78afbfaa2d88a7e9efe010ed48282b29d30fd10e hkajol725 <47182720-hkajol725@users.noreply.replit.com> 1756888270 +0000	commit: Extend user session duration to prevent automatic logouts
+78afbfaa2d88a7e9efe010ed48282b29d30fd10e b32b350a3291002d68bc480abd6f271a8e9d4f62 hkajol725 <47182720-hkajol725@users.noreply.replit.com> 1756889025 +0000	commit: Organize admin view to show user information separately
+b32b350a3291002d68bc480abd6f271a8e9d4f62 a998cb2bec0e8117b56a2a055b67e74452de0b80 hkajol725 <47182720-hkajol725@users.noreply.replit.com> 1756889915 +0000	commit: Remove balance information from user display and registration
+a998cb2bec0e8117b56a2a055b67e74452de0b80 85214c834db3ebe11408a14673cb07d11bbb2cd9 hkajol725 <47182720-hkajol725@users.noreply.replit.com> 1756979869 +0000	commit: Allow admins to delete users and associated data from the panel
