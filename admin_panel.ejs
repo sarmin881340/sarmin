@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>এডমিন প্যানেল</title>
+<link rel="stylesheet" href="/style.css">
+<style>
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.nav-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.nav-box:hover {
+    transform: translateY(-2px);
+    color: white;
+}
+</style>
+</head>
+<body>
+<div class="admin-panel">
+    <h2 style="text-align:center;color:#333;margin-bottom:30px;">এডমিন ড্যাশবোর্ড</h2>
+    
+    <div class="nav-menu">
+        <a href="/admin/user_information" class="nav-box">ইউজার ইনফরমেশন</a>
+        <a href="/admin/payment_records" class="nav-box">পেমেন্ট রেকর্ড</a>
+        <a href="/admin/review_submissions" class="nav-box">রিভিউ সাবমিশন</a>
+        <a href="/admin/messaging_system" class="nav-box">মেসেজিং সিস্টেম</a>
+    </div>
+
+    <div style="text-align:center;padding:50px;">
+        <h3 style="color:#667eea;margin:20px 0;">স্বাগতম এডমিন প্যানেলে</h3>
+        <p style="color:#666;font-size:16px;">উপরের মেনু থেকে যেকোনো সেকশনে ক্লিক করুন</p>
+        
+        <div style="display:flex;justify-content:space-around;margin:30px 0;flex-wrap:wrap;">
+            <div style="background:#f8f9fa;padding:20px;border-radius:10px;margin:10px;min-width:150px;">
+                <h4 style="color:#667eea;margin:0;">মোট ইউজার</h4>
+                <p style="font-size:24px;font-weight:bold;color:#333;margin:10px 0;"><%= users.length %> জন</p>
+            </div>
+            <div style="background:#f8f9fa;padding:20px;border-radius:10px;margin:10px;min-width:150px;">
+                <h4 style="color:#667eea;margin:0;">পেমেন্ট রেকর্ড</h4>
+                <p style="font-size:24px;font-weight:bold;color:#333;margin:10px 0;"><%= payments.length %> টি</p>
+            </div>
+            <div style="background:#f8f9fa;padding:20px;border-radius:10px;margin:10px;min-width:150px;">
+                <h4 style="color:#667eea;margin:0;">রিভিউ</h4>
+                <p style="font-size:24px;font-weight:bold;color:#333;margin:10px 0;"><%= reviews.length %> টি</p>
+            </div>
+            <div style="background:#f8f9fa;padding:20px;border-radius:10px;margin:10px;min-width:150px;">
+                <h4 style="color:#667eea;margin:0;">মেসেজ</h4>
+                <p style="font-size:24px;font-weight:bold;color:#333;margin:10px 0;"><%= (typeof messages !== 'undefined' ? messages.length : 0) %> টি</p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align:center;margin-top:30px;">
+        <a href="/admin_logout" class="btn btn-secondary">লগআউট</a>
+    </div>
+</div>
+</body>
+</html>
