@@ -1,3 +1,5 @@
+/* =========================== */
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,7 @@ body {
   padding: 20px;
 }
 
+/* Container for forms */
 .container {
   background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
   padding: 40px;
@@ -29,12 +32,14 @@ body {
   backdrop-filter: blur(10px);
 }
 
+/* Headings */
 h2 {
   color: #333;
   margin-bottom: 30px;
   font-size: 32px;
 }
 
+/* Input fields */
 input[type="text"], 
 input[type="email"], 
 input[type="password"], 
@@ -64,6 +69,7 @@ input:focus, textarea:focus {
   border-color: #667eea;
 }
 
+/* Buttons */
 .btn {
   width: 100%;
   padding: 20px;
@@ -89,6 +95,7 @@ input:focus, textarea:focus {
   margin-top: 15px;
 }
 
+/* Messages */
 .error {
   color: #e74c3c;
   margin: 20px 0;
@@ -109,6 +116,7 @@ input:focus, textarea:focus {
   font-size: 16px;
 }
 
+/* Paragraphs and links */
 p {
   margin: 25px 0;
   color: #666;
@@ -125,7 +133,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ড্যাশবোর্ড স্টাইল */
+/* =========================== */
+/* Dashboard styles */
 .dashboard {
   max-width: 95vw;
   width: 100%;
@@ -192,7 +201,8 @@ a:hover {
   color: #1976D2;
 }
 
-/* এডমিন প্যানেল স্টাইল */
+/* =========================== */
+/* Admin panel styles */
 .admin-panel {
   max-width: 95vw;
   width: 100%;
@@ -248,7 +258,8 @@ tr:hover {
   font-weight: bold;
 }
 
-/* রেসপন্সিভ ডিজাইন */
+/* =========================== */
+/* Responsive Design */
 @media (max-width: 768px) {
   body {
     padding: 10px;
@@ -285,3 +296,7 @@ tr:hover {
     font-size: 24px;
   }
 }
+
+/* =========================== */
+/* --- যুক্তি --- */
+/* শুধু নিশ্চিত করার জন্য যে public/style.css থেকে সব ফাইল CSS লোড হবে */
